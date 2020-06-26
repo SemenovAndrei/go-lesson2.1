@@ -14,7 +14,7 @@ func main() {
 
 	list := transfer.NewService(cardSvc)
 
-	fmt.Println(cardSvc)
+	fmt.Println(list.CardSvc)
 	fmt.Println(card1, card2)
 
 	fmt.Println(cardSvc.CheckNumber("0001"))

@@ -2,6 +2,8 @@ package transfer
 
 import "github.com/i-hit/go-lesson2.1.git/pkg/card"
 
+
+
 type Service struct {
 	CardSvc *card.Service
 	// поля для хранения:
@@ -11,7 +13,6 @@ type Service struct {
 	MinimumFromTinkoff int64
 	CommissionOther int64
 	MinimumOther int64
-
 }
 
 func NewService(cardSvc *card.Service) *Service {
@@ -25,7 +26,7 @@ func NewService(cardSvc *card.Service) *Service {
 	}
 }
 
-func (s *Service) Card2Card(from, to string, amount int64) (int64, bool) {
+func (s *Service) Card2Card(from string, to string, amount int64) (int64, bool) {
 	// TODO: ваш код
 	commision := s.CommissionToTinkoff
 	total := amount + commision
