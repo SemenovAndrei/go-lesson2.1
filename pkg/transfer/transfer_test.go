@@ -88,7 +88,7 @@ func TestService_Card2Card(t *testing.T) {
 			args: args{
 				from:   "0003",
 				to:     "0004",
-				amount: 1000,
+				amount: 10000,
 			},
 			want: 1030,
 			want1: true,
