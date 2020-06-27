@@ -101,7 +101,7 @@ func TestService_Card2Card(t *testing.T) {
 				CommissionFromTinkoff: 5,
 				MinimumFromTinkoff: 10,
 				CommissionOther: 15,
-				MinimumOther: 30,
+				MinimumOther: 300,
 			}
 			got, got1 := s.Card2Card(tt.args.from, tt.args.to, tt.args.amount)
 			if got != tt.want {
